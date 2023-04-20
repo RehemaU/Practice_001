@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Project_001 {
 	public static void main (String[] orgs)
 	{
+		/*
 		System.out.println("첫번째 예제: 한개의 숫자를 입력받고 그 수의 두배를 결과로 출력하기.");
 		System.out.println("숫자를 입력하세요.");
 		Scanner scan = new Scanner(System.in);
@@ -40,7 +41,30 @@ public class Project_001 {
 		System.out.println(d4);
 		System.out.println("입니다.");
 		
-		scan.close();
+				scan.close();
+		*/
+		
+		//num1 num2 값을 입력받고, op 값을 입력받아, op=0 이면 덧셈, op=/=0 이면 뺄셈을 하는 구문 작성하기
+		Scanner put = new Scanner(System.in);
+		System.out.println("num1");
+		int num1 = put.nextInt();
+		System.out.println("num2");
+		int num2 = put.nextInt();
+		System.out.println("op");
+		int op = put.nextInt();
+		
+		int numR;
+		if (op==0)
+		{
+			numR=num1+num2;
+		}
+		else
+		{
+			numR=num1-num2; 
+		}
+		System.out.println(numR);
+		
+		put.close();
 	}
 
 }
