@@ -4,16 +4,26 @@ import java.util.Scanner;
 public class Project_001 {
 	public static void main (String[] orgs)
 	{
+		System.out.println("첫번째 예제: 한개의 숫자를 입력받고 그 수의 두배를 결과로 출력하기.");
 		System.out.println("숫자를 입력하세요.");
 		Scanner scan = new Scanner(System.in);
-		int c = scan.nextInt();
+		int a = scan.nextInt();
 		System.out.println("입력받은 수의 두배는,");
-		int d = c+c;
-		System.out.println(d);
+		int b = a+a;
+		System.out.println(b);
 		System.out.println("입니다.");
-		scan.close();
 		//BufferedReader br = new BufferedReader(new InputStreamReader(System.in());
 		
+		System.out.println("두번째 예제: 두개의 숫자를 입력받고 두 수의 합을 결과로 출력하기.");
+		System.out.println("첫번째 숫자를 입력하세요.");
+		int a1 = scan.nextInt();
+		System.out.println("두번째 숫자를 입력하세요.");
+		int a2 = scan.nextInt();
+		System.out.println("입력받은 두 수의 합은,");
+		int b1 = a1+a2;
+		System.out.println(b1);
+		System.out.println("입니다.");
+		scan.close();
 	}
 
 }
