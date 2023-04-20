@@ -1,5 +1,5 @@
-import java.util.Scanner;
-//import java.io.*;
+//import java.util.Scanner;
+//import java.io.*;	//얘는 안씀 BufferedReader 깔짝여본것 뿐.
 
 public class Project_001 {
 	public static void main (String[] orgs)
@@ -14,7 +14,7 @@ public class Project_001 {
 		int b = a+a;
 		System.out.println(b);
 		System.out.println("입니다.");
-		//BufferedReader br = new BufferedReader(new InputStreamReader(System.in());
+		//BufferedReader br = new BufferedReader(new InputStreamReader(System.in());	//얘는 안씀 BufferedReader 깔짝여본것 뿐.
 		
 		//2
 		System.out.println("두번째 예제: 두개의 숫자를 입력받고 두 수의 합을 결과로 출력하기.");
@@ -66,12 +66,11 @@ public class Project_001 {
 		}
 		System.out.println(numR);
 		put.close();
-		
-		*/
-		
+				
 		//5
 		//정수 하나를 입력받아, 짝수인지 홀수인지 구별하는 프로그램을 만드시오.
 		Scanner putin = new Scanner(System.in);
+		
 		System.out.println("정수하나입력하시오.");
 		int num3 = putin.nextInt();
 		
@@ -80,11 +79,11 @@ public class Project_001 {
 		
 		System.out.print("나머지값은:");
 		System.out.println(num5);
+		
 		if (num3 == 0)
 		{
 			System.out.println("0입니다.");
 		}
-
 		else
 		{
 			while (num4!=0&&num4!=1)
@@ -104,6 +103,18 @@ public class Project_001 {
 		putin.close();
 		//나는 % 연산자를 몰라서 while문으로 먼저 접근했다가 (나머지를 구하려 처음에 / 연산자를 썼는데 나누기는 나머지값이 나오지 않아서 곰곰히 생각해 본 결과.) 구글링해 본 후, % 연산자의 존재를 깨달음.
 		//어찌보면 기본기도 없는 멍청이라 할 수 있겠습니다...
+		*/
+		
+		//6
+		//1~100까지의 합을 구하는 프로그램을 반복문을 사용하여 만드시오.
+		int result=0;
+		for(int i = 1;i<101;i++)
+		{
+			//result=result+i;
+			result += i;	//위와 같은 구문(더 간편한 구문)
+		}
+		System.out.println(result);
+		//이 문제는 for문 검색하다가.. 모르고 힌트를 봐버렸다네요.
 	}
 
 }
