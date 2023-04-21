@@ -114,7 +114,8 @@ public class Project_001 {
 		}
 		System.out.println(result);
 		//이 문제는 for문 검색하다가.. 모르고 힌트를 봐버렸다네요.
-		 */
+		 
+		
 		//7
 		//1~100까지의 사이에 3의 배수가 몇개가 되는지 구하는 예제
 		int thr = 0;
@@ -126,6 +127,74 @@ public class Project_001 {
 			}
 		}
 		System.out.println(thr);
+		
+		//8
+		//1~100까지의 합을 구해서 출력한 후, 1~200까지의 합을 구해서 출력하고, 마지막으로 1~300까지의 합을 구해서 출력하는 프로그램 만들기 (코드 재활용하기)
+		int result1=0;
+		for(int i = 1;i<=100;i++)
+		{
+			//result=result+i;
+			result1 += i;	//위와 같은 구문(더 간편한 구문)
+		}
+		System.out.print("1~100까지의 합:");
+		System.out.println(result1);
+		
+		int result2=0;
+		for(int i = 1;i<=200;i++)
+		{
+			//result=result+i;
+			result2 += i;	//위와 같은 구문(더 간편한 구문)
+		}
+		System.out.print("1~200까지의 합:");
+		System.out.println(result2);
+		
+		int result3=0;
+		for(int i = 1;i<=300;i++)
+		{
+			//result=result+i;
+			result3 += i;	//위와 같은 구문(더 간편한 구문)
+		}
+		System.out.print("1~300까지의 합:");
+		System.out.println(result3);
+				*/
+		
+		//9
+		//1~100까지의 짝수의 합을 출력, 101~200까지의 짝수의 합을 출력,201~300까지의 짝수의 합을 출력
+		int result=0;
+		int n1, n2;
+		
+		n1=1;
+		n2=100;
+		for(int i=n1;i<=n2;i++)
+		{
+			if (i%2==0)
+			{
+				result+=i;
+			}
+		}
+		System.out.println(result);
+		
+		n1=101;
+		n2=200;
+		for(int i=n1;i<=n2;i++)
+		{
+			if (i%2==0)
+			{
+				result+=i;
+			}
+		}
+		System.out.println(result);
+		
+		n1=201;
+		n2=300;
+		for(int i=n1;i<=n2;i++)
+		{
+			if (i%2==0)
+			{
+				result+=i;
+			}
+		}
+		System.out.println(result);
+		
 	}
-
 }
