@@ -1,4 +1,4 @@
-//import java.util.Scanner;
+import java.util.Scanner;
 //import java.io.*;	//얘는 안씀 BufferedReader 깔짝여본것 뿐.
 
 public class Project_001 {
@@ -156,7 +156,6 @@ public class Project_001 {
 		}
 		System.out.print("1~300까지의 합:");
 		System.out.println(result3);
-				*/
 		
 		//9
 		//1~100까지의 짝수의 합을 출력, 101~200까지의 짝수의 합을 출력,201~300까지의 짝수의 합을 출력
@@ -195,6 +194,25 @@ public class Project_001 {
 			}
 		}
 		System.out.println(result);
+		*/
 		
+		//10
+		//임의의 수를 매개변수로 전달받아 1~n 사이에 3의 배수가 몇개가 되는 지 구하는 프로그램
+		//매개변수가 정확히 모르겠지만 사용자에게 입력받는 변수를 말하는 게 맞겠지?
+		//난수는 아닐 거 아냐
+		
+		Scanner scan = new Scanner(System.in);
+		int a = scan.nextInt();
+		int result=0;
+		for(int i=1;i<=a;i++)
+		{
+			if(i%3==0)
+			{
+				result++;
+			}
+		}
+		System.out.println(result);
+		scan.close();
+
 	}
 }
