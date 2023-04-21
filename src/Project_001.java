@@ -194,8 +194,7 @@ public class Project_001 {
 			}
 		}
 		System.out.println(result);
-		*/
-		
+
 		//10
 		//임의의 수를 매개변수로 전달받아 1~n 사이에 3의 배수가 몇개가 되는 지 구하는 프로그램
 		//매개변수가 정확히 모르겠지만 사용자에게 입력받는 변수를 말하는 게 맞겠지?
@@ -213,6 +212,16 @@ public class Project_001 {
 		}
 		System.out.println(result);
 		scan.close();
-
+		*/
+		
+		//11
+		//국,영,수 과목의 점수를 입력받고, 평균을 내는 프로그램
+		Scanner scan = new Scanner(System.in);
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int c = scan.nextInt();
+		int r = (a+b+c)/3;
+		System.out.println(r);
+		scan.close();
 	}
 }
