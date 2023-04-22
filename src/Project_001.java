@@ -1,5 +1,6 @@
 import java.util.Scanner;
 //import java.io.*;	//얘는 안씀 BufferedReader 깔짝여본것 뿐.
+import java.util.ArrayList;
 
 public class Project_001 {
 	public static void main (String[] orgs)
@@ -212,7 +213,6 @@ public class Project_001 {
 		}
 		System.out.println(result);
 		scan.close();
-		*/
 		
 		//11
 		//국,영,수 과목의 점수를 입력받고, 평균을 내는 프로그램
@@ -222,6 +222,49 @@ public class Project_001 {
 		int c = scan.nextInt();
 		int r = (a+b+c)/3;
 		System.out.println(r);
+		scan.close();
+		 */
+		
+		//12
+		//11번 문제에서 과목을 추가하고 삭제해보세요 (리스트를 사용하라는 거 같은데... 하 이제 어려워지는구나.)
+		//ㅇㅋ 이건 나중으로 미루고 강의부터 듣겠습니다 리스트 하려니까 갑자기 쉬고싶네
+//		ArrayList sub = new ArrayList();
+//		ArrayList score = new ArrayList();
+		//배열을 배우고 다시 돌아왔습니다! 리스트는 아니지만 배열로 다시 도전해보겠습니다!
+		Scanner scan = new Scanner(System.in);
+		System.out.println("몇가지 과목을 입력하나요?");
+		int n = scan.nextInt();
+		int[] score = new int[n];
+		String[] sub = new String[n];
+		for (int i=0;i<n;i++)
+		{
+			System.out.printf("%d번째 ",i+1);
+			System.out.println("과목명을 입력하세요.");
+			sub[i] = scan.next();
+		}
+		
+//		System.out.println("입력하신 과목은,");
+//		for (int i=0;i<n;i++)
+//		{
+//			System.out.println(sub[i]);
+//		}
+//		System.out.println("입니다.");
+		
+		System.out.println("첫번째 과목부터 순서대로 성적을 입력하시오.");
+		for (int i=0;i<n;i++)
+		{
+			System.out.printf("%d번째 ",i+1);
+			System.out.println("성적을 입력하세요.");
+			score[i] = scan.nextInt();
+		}
+		int average = 0;
+		for (int i=0;i<n;i++)
+		{
+			average += score[i];
+		}
+		average = average/n;
+		System.out.println("전체 과목의 평균 점수는:"+average);
+		
 		scan.close();
 	}
 }
